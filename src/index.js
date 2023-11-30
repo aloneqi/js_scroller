@@ -83,6 +83,7 @@ class Scroller {
     }
 
     contentSize(exposedAreaWidth, exposedAreaHeight, width, height) {
+        console.log(exposedAreaWidth, exposedAreaHeight, width, height)
         this.rangeMovement.right = Math.max(width - exposedAreaWidth, 0);
         this.rangeMovement.bottom = Math.max(height - exposedAreaHeight, 0);
         let offsetX = this.rangeMovement.left,
